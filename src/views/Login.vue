@@ -36,18 +36,14 @@ export default {
                     "Content-Type": "multipart/form-data",
                     "X-Requested-With": "XMLHttpRequest"
                 }
-
             })
             .then((response) => {
                 if (response.data.result.user) {
                     this.$router.push('/panel')
                 } else {
                     this.message = response.data.message.description
-                }
-                console.log(response)
-                
+                }        
             })
-
         }
     }
 }

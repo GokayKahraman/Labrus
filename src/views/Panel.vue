@@ -51,8 +51,7 @@ export default {
         })
         .then(response => {
             if (response.data.result) {
-                this.offers = response.data.result
-                console.log(this.offers)
+                this.offers = response.data.result 
             }
         })
     },   
